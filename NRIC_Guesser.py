@@ -126,19 +126,20 @@ n = 2
 tlist = [listToStr[i:i+n] for i in range(0, len(listToStr), n)]
 # tlist = int(tlist.sort())
 tlist =sorted(tlist)
-# print("tlist before pop" , tlist)
+print("tlist before pop" , tlist)
 
 
-for i in range(0, len(tlist)):
-    tlist[i] = int(tlist[i])
+# for i in range(0, len(tlist)):
+#     tlist[i] = int(tlist[i])
 
 
 ttlist = []
 for i in tlist:
-    if i < 50:
+    if int(i) < 50:
         ttlist.append(i)
 
-# print("tlist after pop" , ttlist)
+ttlist =sorted(ttlist)
+print("tlist after pop" , ttlist)
 
 
 test2 = []
@@ -152,8 +153,8 @@ for sum in sumlist:
 
 
 choose = (month / 12) * len(ttlist)
-
-# print("choose number" , round(choose))
+print("choose before round" , choose)
+print("choose number" , round(choose))
 
 
 # if month == 1 or month == 2:
